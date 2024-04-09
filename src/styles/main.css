@@ -18,6 +18,20 @@ body {
   max-width: 100px;
 }
 
+.botoes button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.botoes button:hover {
+  background-color: #ddd;
+}
+
 .produto {
   background-color: #fff;
   border-radius: 8px;
