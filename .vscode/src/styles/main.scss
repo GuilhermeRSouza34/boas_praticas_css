@@ -1,0 +1,71 @@
+$cor-destaque: #ff9900;
+$cor-fundo: #f4f4f4;
+
+// Estilos gerais
+body {
+    font-family: Arial, sans-serif;
+    background-color: $cor-fundo;
+    margin: 0;
+    padding: 0;
+}
+
+.produto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &.em-destaque {
+        border: 2px solid $cor-destaque;
+    }
+
+    &-imagem {
+        max-width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &-nome {
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: $cor-destaque;
+        text-align: center;
+    }
+
+    &-descricao {
+        font-size: 0.9em;
+        color: #555;
+        text-align: center;
+    }
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .produto {
+        flex: 0 0 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+    @media (max-width: 768px) {
+        .produto {
+            flex: 0 0 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .produto {
+            flex: 0 0 calc(100% - 20px);
+            max-width: calc(100% - 20px);
+        }
+    }
+}
