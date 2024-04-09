@@ -5,8 +5,8 @@ body {
   padding: 0;
 }
 
-.barra-vavegacao {
-  background-color: #333;
+.barra-navegacao {
+  background-color: #333; /* Cor de fundo da barra de navegação */
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -14,22 +14,26 @@ body {
   padding: 10px 20px;
 }
 
-.logo img {
+.barra-navegacao .logo img {
   max-width: 100px;
 }
 
-.botoes button {
-  background-color: #fff;
-  color: #333;
+.barra-navegacao .botoes {
+  display: flex;
+}
+
+.barra-navegacao .botoes button {
+  background-color: #444; /* Cor de fundo dos botões */
+  color: #fff;
   border: none;
   padding: 8px 16px;
-  margin-left: 10px;
+  margin-left: 10px; /* Espaçamento entre os botões */
   cursor: pointer;
   border-radius: 5px;
 }
 
-.botoes button:hover {
-  background-color: #ddd;
+.barra-navegacao .botoes button:hover {
+  background-color: #555; /* Cor de fundo dos botões ao passar o mouse */
 }
 
 .produto {
