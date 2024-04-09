@@ -5,6 +5,15 @@ body {
   padding: 0;
 }
 
+.barra-vavegacao {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
 .produto {
   background-color: #fff;
   border-radius: 8px;
